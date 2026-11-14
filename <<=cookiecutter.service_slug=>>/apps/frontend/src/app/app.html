@@ -1,0 +1,17 @@
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">◆</span>
+    <h1><<=cookiecutter.service_name=>></h1>
+  </div>
+  @if (version(); as v) {
+    <span class="meta" data-testid="api-version">
+      v{{ v }} · <span class="env">{{ environment() }}</span>
+    </span>
+  }
+</header>
+
+<main>
+  <p class="placeholder">
+    Esqueleto sin ninguna página de negocio todavía — la primera feature real añade la primera.
+  </p>
+</main>

@@ -1,0 +1,14 @@
+{
+  "service_name": "Nuevo Servicio",
+  "service_slug": "<<=cookiecutter.service_name.lower().replace(' ', '-')=>>",
+  "service_description": "Servicio <<=cookiecutter.service_name=>> del agentic-platform-lab",
+  "package_name": "<<=cookiecutter.service_slug.replace('-', '_')=>>",
+  "env_prefix": "<<=cookiecutter.package_name.upper() ~ '_'=>>",
+  "frontend": ["angular"],
+  "backend": ["fastapi"],
+  "runtime": ["k3s01"],
+  "_jinja2_env_vars": {
+    "variable_start_string": "<<=",
+    "variable_end_string": "=>>"
+  }
+}
